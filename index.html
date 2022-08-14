@@ -1,0 +1,123 @@
+<html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Banipreet Kaur - Final Assignment</title>
+    </head>
+    <body>
+       <header id="Image">
+        <figure>
+            <img src="background.jpg" alt="My Image" width="350" height="300" />
+        </figure> 
+        <p id="name">Banipreet Kaur</p>
+        <p id="position">Web Application Developer</p>
+        <div class="btn"><button class="button1">
+            <a href="./Banipreet Kaur_Resume.pdf" download>Resume</a>
+        </button>
+        <button class="button2">
+            <a href="#container">Contact Me</a>
+        </button>
+        </div>
+       </header>
+
+       <div id="about">
+        <div class="section">
+          <div class="split left">
+            <h1>About Me!</h1>
+            <p>I am a student from Seneca College international student from India pursuing an Advanced Diploma in Computer Programming and Analysis. I am interested in computer science and software development.
+            </p>
+            <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+          </div>
+          <div class="split right">
+            <h1>Basic Information</h1>
+            <p>
+              NAME: Banipreet Kaur <br />
+              AGE: 18 <br />
+              EMAIL: banipreet-kaur@myseneca.ca<br />
+              LANGUAGE: English<br />
+              COURSE: WEB<br />
+              SECTION: NEE<br />
+              STUDENT ID: 156457210<br />
+              INSTRUCTOR: Noman Atique
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1>EDUCATION</h1>  
+<div class="education">
+    <div class="educationstatus"> 
+        2022 - 2024 (Expected) <br />Advanced Diploma
+    </div>
+    <div class="Education_status"> 
+        Computer Programming and Analysis <br /> Seneca College - Newnham Campus, ON
+</div>
+<div class="earlier1"> 
+    2019 - 2021  <br />High School Diploma
+</div>
+<div class="earlier2"> 
+    12 Grade <br /> MM International School, India
+</div>
+</div> 
+
+ <div id="container">
+  <h1>Contact Me</h1>
+    <form action="https://httpbin.org/post" method="post">
+  
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Your first name..."required>
+  
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Your last name..."required>
+
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="email" placeholder="Your email..."required>
+  
+       <label for="address">Address</label>
+       <input type="text" id="address" name="address" placeholder="Your address..."required> 
+
+      	
+       <label for="postalcode">Postal Code</label>
+       <input type="text" id="postalcode" name="postalcode" pattern="^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$" placeholder="Your postal code..."required> 
+
+      <label for="city">City</label>
+      <select id="city" name="city"required>
+        <option value="scarborough">Scarborough</option>
+        <option value="markham">Markham</option>
+        <option value="northyork">North York</option>
+        <option value="vaughan">Vaughan</option>
+        <option value="thornhill">Thornhill</option>
+        <option value="toronto">Toronto</option>
+       </select>
+
+       <label for="phonenumber">Phone Number</label>
+       <input type="text" id="phonenumber" name="phonenumber" placeholder="Your phone number..."required> 
+
+       
+      <label for="subject">Subject</label><br>
+      <input type="radio" id="option_one" name="selection"required onclick=" checkButton()">
+      <label for="option_one"> Question</label>
+      <div class="radio_demo"></div>
+
+      <input type="radio" id="option_two" name="selection"required onclick=" checkButton()">
+      <label for="option_two"> Comment</label>
+      <div class="radio_demo"></div>
+
+      <input type="radio" id="option_three" name="selection"required onclick=" checkButton()">
+      <label for="option_three"> Hiring</label>
+      <div class="radio_demo">
+        <div id="reveal-if-active">
+          
+          </div>
+      </div>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"required></textarea>
+      
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+      
+    </body>
+</html>
