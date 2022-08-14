@@ -2,10 +2,7 @@ body{
     margin: auto;
     padding: 0;
     background: whitesmoke;
-    /* background-size: cover; */
     max-width: 1024px;
-    /* display: block;
-    justify-content: center; */
 }
 
 img{
@@ -36,7 +33,7 @@ img{
 
 .button1, .button2 {
     display: inline-block;
-    background-color: #7b38d8;
+    background-color: #825fb3;
     border-radius: 10px;
     border: 4px double #cccccc;
     color: #070303;
@@ -72,7 +69,7 @@ img{
   }
 
   #TopSection {
-    background-color: rgb(137, 97, 218);
+    background-color: rgb(23, 201, 232);
     margin-bottom: 15px;
     border-radius: 4px;
   }
@@ -85,10 +82,17 @@ img{
     margin-right: 60px;
     margin-left: 130px;
     flex: 1;
+    font-family: cursive;
+    font-weight: 900;
+
   }
   
   .right {
+    margin-right: 60px;
+    margin-left: 130px;
     flex: 1;
+    font-family: cursive;
+    font-weight: 900;
   }
   
   #info {
@@ -101,38 +105,37 @@ img{
 
   .education{
     display: grid;
-    /* column-gap: 10px; */
     border: 2px black;
     padding: 30px;
 }
-.educationstatus{
+.paststatus{
     grid-column: 2/3;
    border: 2px black;
-   background-color: rgb(120, 95, 229);
+   background-color: #ed139d;
    padding: 20px;
    margin-bottom: 20px;
 }
-.Education_status{
+.presentstatus{
     grid-column: 4/7;
     border: 2px black;
-    background-color: rgb(120, 95, 229);
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #ed139d;
+    padding: 30px;
+    margin-bottom: 30px;
 }
-.earlier1{
+.education1{
     grid-column: 2/3;
-   border: 2px black;
-   background-color: rgb(229, 99, 95);
-   padding: 20px;
-   margin-bottom: 20px;
+   border: 4px black;
+   background-color: rgb(120, 37, 245);
+   padding: 15px;
+   margin-bottom:15px;
 
 }
-.earlier2{
+.education2{
     grid-column: 4/7;
-    border: 2px black;
-    background-color: rgb(229, 99, 95);
-    padding: 20px;
-    margin-bottom: 20px;
+    border: 4px black;
+    background-color: rgb(120, 37, 245);
+    padding: 15px;
+    margin-bottom: 15px;
 
 }
 input[type=text], select, textarea {
@@ -141,15 +144,14 @@ input[type=text], select, textarea {
     border-radius: 3px; 
     margin-top: 5px; 
     margin-bottom: 17px; 
-    border: 1px solid rgb(159, 49, 49); 
+    border: 10px groove rgb(49, 115, 159); 
     box-sizing: border-box; 
-    resize: vertical 
+    resize: vertical;
   }
   
-  
   input[type=submit] {
-    border-radius: 4px;
-    padding: 14px 20px;
+    border-radius: 2px;
+    padding: 15px 19px;
     background-color: #4cf24e;
     color: white;
     cursor: pointer;
@@ -157,41 +159,40 @@ input[type=text], select, textarea {
 
   input[type=submit]:hover {
     background-color: #5774f4;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
   }
   
   #container {
-    border-radius: 4px;
-    background-color: #004417ca;
-    padding: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 7px;
+    background-color: #06705bca;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
   } 
 
   .reveal-if-active {
     display: none;
   }
 
-  /* #option_three {
-    .reveal-if-active{
-   display: block;
-    }
-  } */
-
-
   @media only screen and (max-width: 400px) {
-    .about{
+    .section{
         display: block; 
      }
      #About{
          margin-left: 0px;
-         padding: 10px;
+         padding: 0px;
      }
      #info{
          margin-left: 0px;
-         padding: 10px;
+         padding: 0px;
      }
      img {
         display: block;
-        height: 300px;
+        height: 400px;
         width: 300px;
      }
   }
